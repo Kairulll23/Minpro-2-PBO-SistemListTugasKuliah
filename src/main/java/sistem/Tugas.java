@@ -7,7 +7,6 @@ public class Tugas {
     private final ArrayList<Storage> listTugasKu = new ArrayList<>();
     private final Scanner scan = new Scanner(System.in);
 
-    // Menu Utama & Pengolahan Input
     public void olahMenu(Pengguna user) {
         boolean lanjut = true;
         System.out.println("\nSelamat Datang, " + user.getNama() + " (" + user.getNim() + ")!");
@@ -46,7 +45,6 @@ public class Tugas {
         }
     }
 
-    // --- Helper Input & Validasi ---
     private int bacaAngka() {
         while (!scan.hasNextInt()) {
             System.out.println("[!] Input harus berupa angka.");
@@ -54,7 +52,7 @@ public class Tugas {
             scan.next();
         }
         int angka = scan.nextInt();
-        scan.nextLine(); // Clear buffer
+        scan.nextLine();
         return angka;
     }
 

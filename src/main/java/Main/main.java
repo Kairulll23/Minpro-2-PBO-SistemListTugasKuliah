@@ -1,14 +1,12 @@
-package main; // Diubah dari 'Main' menjadi 'main' (huruf kecil)
+package main;
 
 import sistem.Pengguna;
 import sistem.Tugas;
 
 public class main {
     public static void main(String[] args) {
-        // Inisialisasi Data Pengguna
-        Pengguna mhs = new Pengguna("230101001", "Mahasiswa Praktikum");
+        Pengguna mhs = new Pengguna("2509116097", "Khairul Ikhsan");
         
-        // Memanggil Class Utama Tugas
         Tugas app = new Tugas();
         app.olahMenu(mhs);
     }
