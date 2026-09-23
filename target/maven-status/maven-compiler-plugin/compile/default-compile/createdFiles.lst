@@ -1,4 +1,7 @@
-sistem\Pengguna.class
-sistem\Storage.class
+model\Tugas.class
+model\TugasIndividu.class
+model\Mahasiswa.class
+view\TugasView.class
+model\TugasKelompok.class
 Main\main.class
-sistem\Tugas.class
+controller\TugasController.class

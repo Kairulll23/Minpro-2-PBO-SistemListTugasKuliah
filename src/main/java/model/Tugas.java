@@ -1,12 +1,12 @@
-package sistem;
+package model;
 
-public class Storage {
+public abstract class Tugas {
     private String kodeTugas;
     private String namaMatkul;
     private String detailTugas;
     private String dateline;
 
-    public Storage(String kodeTugas, String namaMatkul, String detailTugas, String dateline) {
+    public Tugas(String kodeTugas, String namaMatkul, String detailTugas, String dateline) {
         this.kodeTugas = kodeTugas;
         this.namaMatkul = namaMatkul;
         this.detailTugas = detailTugas;
@@ -25,8 +25,6 @@ public class Storage {
     public String getDateline() { return dateline; }
     public void setDateline(String dateline) { this.dateline = dateline; }
 
-    public String cetakBaris() {
-        return String.format("| %-8s | %-18s | %-28s | %-20s |", 
-                kodeTugas, namaMatkul, detailTugas, dateline);
-    }
+    public abstract String getTipeTugas();
+    public abstract String cetakBaris();
 }

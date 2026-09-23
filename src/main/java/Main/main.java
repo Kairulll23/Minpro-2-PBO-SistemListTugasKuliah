@@ -1,13 +1,12 @@
 package main;
 
-import sistem.Pengguna;
-import sistem.Tugas;
+import model.Mahasiswa;
+import view.TugasView;
 
 public class main {
     public static void main(String[] args) {
-        Pengguna mhs = new Pengguna("2509116097", "Khairul Ikhsan");
-        
-        Tugas app = new Tugas();
+        Mahasiswa mhs = new Mahasiswa("2509116097", "Khairul Ikhsan");
+        TugasView app = new TugasView();
         app.olahMenu(mhs);
     }
 }
